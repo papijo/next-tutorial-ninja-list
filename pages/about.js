@@ -1,22 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
+import React from "react";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Link from "next/link";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja | Home </title>
+        <title>Ninja | About </title>
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
+        <h1 className={styles.title}>About</h1>
         <p className={styles.text}>
           Aute duis quis aliqua irure adipisicing fugiat eu voluptate
           exercitation. Nisi consectetur anim eu est do deserunt mollit. Est
@@ -35,10 +29,9 @@ export default function Home() {
           pariatur duis exercitation proident aute esse tempor nulla tempor
           pariatur do aliquip incididunt pariatur.
         </p>
-        <Link legacyBehavior href="/ninjas">
-          <a className={styles.btn}>See Ninja Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
